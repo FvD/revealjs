@@ -147,7 +147,7 @@ revealjs_presentation <- function(incremental = FALSE,
     args <- c(args, "--css", pandoc_path_arg(css_file))
   
   # pre-processor for arguments that may depend on the name of the
-  # the input file (e.g. ones that need to copy supporting files)
+  # input file (e.g. ones that need to copy supporting files)
   pre_processor <- function(metadata, input_file, runtime, knit_meta, files_dir,
                             output_dir) {
     
